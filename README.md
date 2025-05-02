@@ -1,4 +1,4 @@
-# 本科毕业设计存档
+# 本科毕业设计
 
 本设计基于 [visual_wholebody](https://github.com/Ericonaldo/visual_wholebody/tree/main) 进行修改，使用前需要先编译原始仓库。
 
