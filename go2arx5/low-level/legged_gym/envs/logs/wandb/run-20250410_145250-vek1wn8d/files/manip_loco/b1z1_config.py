@@ -1,0 +1,1 @@
+/home/irl/visual_wholebody/low-level/legged_gym/envs/manip_loco/b1z1_config.py

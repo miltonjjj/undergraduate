@@ -1,0 +1,44 @@
+[34m[1mwandb[0m: [33mWARNING[0m Saving files without folders. If you want to preserve subdirectories pass base_path to wandb.save, i.e. wandb.save("/mnt/folder/file.h5", base_path="/mnt")
+Setting seed: 1
+||||||||||Observe gait commands!
+Converting heightmap to trimesh...
+Created 4221682 vertices
+Created 8443358 triangles
+Adding trimesh to simulation...
+Trimesh added
+Traceback (most recent call last):
+  File "train.py", line 65, in <module>
+    train(args)
+  File "train.py", line 59, in train
+    env, env_cfg = task_registry.make_env(name=args.task, args=args)
+  File "/home/irl/visual_wholebody/low-level/legged_gym/utils/task_registry.py", line 102, in make_env
+    env = task_class(   cfg=env_cfg,
+  File "/home/irl/visual_wholebody/low-level/legged_gym/envs/manip_loco/manip_loco.py", line 61, in __init__
+    super().__init__(cfg, *args, **kwargs)
+  File "/home/irl/visual_wholebody/low-level/legged_gym/envs/base/legged_robot.py", line 71, in __init__
+    super().__init__(self.cfg, sim_params, physics_engine, sim_device, headless)
+  File "/home/irl/visual_wholebody/low-level/legged_gym/envs/base/base_task.py", line 86, in __init__
+    self.create_sim()
+  File "/home/irl/visual_wholebody/low-level/legged_gym/envs/manip_loco/manip_loco.py", line 287, in create_sim
+    self._create_envs()
+  File "/home/irl/visual_wholebody/low-level/legged_gym/envs/manip_loco/manip_loco.py", line 495, in _create_envs
+    raise Exception('No body found with name {}'.format(name))
+Exception: No body found with name thigh
+Traceback (most recent call last):
+  File "train.py", line 65, in <module>
+    train(args)
+  File "train.py", line 59, in train
+    env, env_cfg = task_registry.make_env(name=args.task, args=args)
+  File "/home/irl/visual_wholebody/low-level/legged_gym/utils/task_registry.py", line 102, in make_env
+    env = task_class(   cfg=env_cfg,
+  File "/home/irl/visual_wholebody/low-level/legged_gym/envs/manip_loco/manip_loco.py", line 61, in __init__
+    super().__init__(cfg, *args, **kwargs)
+  File "/home/irl/visual_wholebody/low-level/legged_gym/envs/base/legged_robot.py", line 71, in __init__
+    super().__init__(self.cfg, sim_params, physics_engine, sim_device, headless)
+  File "/home/irl/visual_wholebody/low-level/legged_gym/envs/base/base_task.py", line 86, in __init__
+    self.create_sim()
+  File "/home/irl/visual_wholebody/low-level/legged_gym/envs/manip_loco/manip_loco.py", line 287, in create_sim
+    self._create_envs()
+  File "/home/irl/visual_wholebody/low-level/legged_gym/envs/manip_loco/manip_loco.py", line 495, in _create_envs
+    raise Exception('No body found with name {}'.format(name))
+Exception: No body found with name thigh
